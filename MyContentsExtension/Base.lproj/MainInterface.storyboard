@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="MyContentsExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5j-3i-hko">
+                                <rect key="frame" x="8" y="8" width="304" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="DY0-8N-voQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="UMU-Rq-cyd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVK-yI-Czz">
+                                <rect key="frame" x="212" y="200.5" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="bVK-yI-Czz" secondAttribute="bottom" id="0gQ-ji-IDO"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="bVK-yI-Czz" secondAttribute="trailing" id="53l-QM-0ge"/>
+                            <constraint firstItem="W5j-3i-hko" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="8" id="itw-6K-dfP"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="W5j-3i-hko" secondAttribute="trailing" constant="8" id="jAM-SS-7ZB"/>
+                            <constraint firstItem="W5j-3i-hko" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="8" id="k9s-qd-5W8"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="W5j-3i-hko" secondAttribute="bottom" constant="8" id="rCM-ef-Bg6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="320"/>
+                    <connections>
+                        <outlet property="imageView" destination="W5j-3i-hko" id="1UQ-Lo-IHy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
